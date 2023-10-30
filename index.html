@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Letter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="newsletter_container" id="newsletter_container">
+      <div class="content_con">
+        <div class="content">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Measuring to ensure updates are a success</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>And much more!</span>
+            </li>
+          </ul>
+          <label for="email">
+            <span>Email address</span>
+            <span id="error">Valid email required</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+            autocomplete="email"
+          />
+          <input
+            type="submit"
+            id="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </div>
+      </div>
+      <div class="img_con">
+        <img class="img_1" src="recentW2.jpg" alt="image" />
+        <img class="img_2" src="recentW1.jpg" alt="image" />
+      </div>
+    </div>
+    <!------Thanks message------->
+    <div id="thanks_con" class="thanks_con">
+      <div class="thanks_icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span id="confirm_email">ash@loremcompany.com</span>. Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+      <button id="dismiss_btn">Dismiss message</button>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/d39c375e60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
